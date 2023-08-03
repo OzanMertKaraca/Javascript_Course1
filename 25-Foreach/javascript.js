@@ -27,3 +27,9 @@ const ogrenci = (kisi,index) =>
     console.log(`${index} - ${kisi}`);
 }
 ogrenciler.forEach(ogrenci);
+
+const product = ["Evet","Hayır","Hayır1","Hayır2"];
+
+product.forEach((product,index,array) => array[index] = `${product.toUpperCase() }` )
+
+console.log (product);
