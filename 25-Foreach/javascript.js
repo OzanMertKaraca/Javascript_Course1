@@ -1,35 +1,14 @@
-// const a = (callBacka) =>
-// {
-//    let yas = 40 ;
-//    callBacka (yas);
-// };
-// a(function(value)
-// {
-//     console.log(value);
-// }
-// )
+const ulum=document.querySelector('.main');
 
-let ogrenciler = ['Barış' , 'Eda' , 'Uğur' , 'Beril'];
+let ogrencilerim = ['Barış','Eda','Uğur','Beril'];
 
-// ogrenciler.forEach(function() 
-// {
-//     console.log("Meraba!");//Ogrenciler dizisi elemanı kadar Yazdırır.
-// })
+let html=``;
 
-// ogrenciler.forEach(function(kisi,index)
-// {
-//     console.log(kisi,index);
-// }
-// )
-
-const ogrenci = (kisi,index) =>
+ogrencilerim.forEach(ogrenci => 
 {
-    console.log(`${index} - ${kisi}`);
-}
-ogrenciler.forEach(ogrenci);
+     html +=` <li> ${ogrenci} </li> `
+})
 
-const product = ["Evet","Hayır","Hayır1","Hayır2"];
+console.log(html);
 
-product.forEach((product,index,array) => array[index] = `${product.toUpperCase() }` )
-
-console.log (product);
+ulum.innerHTML = html;
