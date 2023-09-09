@@ -1,0 +1,50 @@
+button
+{
+ display: block;
+ margin: 20px auto;
+ background: red;
+ color: white;
+ border: 0px;
+ padding: 6px 10px;
+ font-weight: bolder;
+}
+
+.main-popup
+{
+    background: rgba(0, 0 ,0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    display: none; /* block şeklinde olduğunda popup açık oluyor bunu butona tıklanıldığında açılanacak fonks. */
+}
+
+.popup
+{
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background: white;
+    position: relative;
+    font-weight: bolder;
+}
+
+.popup a 
+{
+  background:red;
+  color: white;
+  padding: 7px 11px;
+  text-decoration: none;
+}
+
+.popup-close
+{
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    right: 7px;
+}
