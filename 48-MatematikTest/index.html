@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Matematik Test</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      </head>
+    <body>
+    
+        <section id="header">
+        <div class="bg-white text-center py-4">
+            <div class="container">
+                 <h2 class="text-danger display-4 my-4">Matematik Quiz</h2> <!-- display-4 ters orantılı  yazı büyütmemek için -->
+            </div>
+        </div>
+        </section>
+
+        <div class="result d-none py-4 bg-white text-center"><!-- //d-none  = display none -->
+           <div class="container lead"><!-- lead = font size-->
+              <p><span id="sonuc" class="text-danger display-4 p-3">0%</span>Doğru Cevap Oranı</p>
+              <p id="succesmessage" class="d-none text-danger">Bravo Hepsi Doğru Cevaplandırdın!!!</p>
+           </div>
+        </div>
+
+        <section id="questions">
+          <div class="bg-secondary py-3">
+            <div class="container">
+                <form class="questions-form text-white">
+                <!-- 1. Soru Alanı -->
+                <div class="my-4">
+                    <p>1) 5 + 5 = ?</p>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="q1"  value="10" checked>
+                        <label class="form-check-label">
+                          10
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="q1"  value="12">
+                        <label class="form-check-label">
+                          12
+                        </label>
+                      </div>
+                   </div>
+                <!-- 2. Soru Alanı -->
+                <div class="my-4">
+                    <p>2) 5 * 4 = ?</p>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="q2"  value="20" checked>
+                        <label class="form-check-label">
+                          20
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="q2"  value="10">
+                        <label class="form-check-label">
+                          10
+                        </label>
+                      </div>
+                   </div>
+                    <!-- 3. Soru Alanı -->
+                <div class="my-4">
+                    <p>3) 12 / 4 = ?</p>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="q3"  value="2" checked>
+                        <label class="form-check-label">
+                          2
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="q3"  value="3">
+                        <label class="form-check-label">
+                          3
+                        </label>
+                      </div>
+                   </div>
+                    <!-- 4. Soru Alanı -->
+                <div class="my-4">
+                        <p>4) 5^2 = ?</p>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="q4"  value="25" checked>
+                            <label class="form-check-label">
+                            25
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="q4"  value="16">
+                            <label class="form-check-label">
+                            16
+                            </label>
+                        </div>
+                    </div>
+
+                   <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                   </div>
+                  
+
+                </form>
+            </div>
+          </div>
+        </section>
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <script src="javascript.js"></script>
+        
+    </body>
+    </html> 
