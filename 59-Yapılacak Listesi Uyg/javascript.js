@@ -40,6 +40,7 @@ const filterTodos =  term => { //(term)
 //    console.log(Array.from(list.children));
     Array.from(list.children)
     .filter(todo => !todo.textContent.toLowerCase().includes(term)) //term değişkeninden gelen değer içermiyorsa 
+    //todo her bir li etiketi için verdiğim isim
     .forEach(todo => todo.classList.add('filtered'));// filtered classına ekliyorum gözükmemesini sağlayacak.
      
     Array.from(list.children)
