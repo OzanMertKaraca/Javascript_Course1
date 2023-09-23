@@ -1,5 +1,6 @@
 const addform = document.querySelector('.add');
 const list =  document.querySelector('.todos');
+const search = document.querySelector('.search input');//Classı serach olanın altındaki inputları çağırdım.
 
 const listadd = (todo) => { //todo =>
 
@@ -32,3 +33,23 @@ list.addEventListener('click',e =>{
         e.target.parentElement.remove();    
     }   
 })
+
+const filterTodos =  term => { //(term)
+//    console.log(term);
+//    console.log(list.children);
+//    console.log(Array.from(list.children));
+    Array.from(list.children)
+    .filter(todo => !todo.textContent.toLowerCase().includes(term)) //term değişkeninden gelen değer içermiyorsa 
+    .forEach(todo => todo.classList.add('filtered'));// filtered classına ekliyorum gözükmemesini sağlayacak.
+     
+    Array.from(list.children)
+    .filter(todo => todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.remove('filtered'));
+} 
+
+search.addEventListener('keyup',() =>{
+    const term=search.value.trim().toLowerCase();//girilen değeri term değişkeninde tutuyorum. Küçük harfe çevirip kontrlünü yapıyorum
+    //console.log(term);
+    filterTodos(term);
+})
+//HTMLCollection da arrowfunction kullanılmaz
