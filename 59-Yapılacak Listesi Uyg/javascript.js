@@ -26,3 +26,9 @@ addform.addEventListener('submit',e => {
     
 })
 
+list.addEventListener('click',e =>{  
+    if(e.target.classList.contains('delete'))//e.target tıkladığım yer
+    {
+        e.target.parentElement.remove();    
+    }   
+})
