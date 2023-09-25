@@ -6,8 +6,8 @@ request.addEventListener('readystatechange',()=> {
    // console.log(request,request.readyState);
     if(request.readyState === 4 && request.status === 200)
     {
-        // console.log(request.responseText);
-        callback(undefined,request.responseText);
+       const data =JSON.parse(request.responseText);//Gelen datayı json formata dönüştürdüm.
+        callback(undefined,data);
     }
     
     else if(request.readyState === 4)
@@ -18,7 +18,7 @@ request.addEventListener('readystatechange',()=> {
    
 });
 
-request.open('GET','https://jsonplaceholder.typicode.com/todoss');
+request.open('GET','https://jsonplaceholder.typicode.com/todos');
 request.send();
 }
 
