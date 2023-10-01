@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box; /*Tüm html etiketlerinde geçerli olması için resetleme */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+.container{
+   width: 400px;
+   text-align: center;
+   position: relative;
+}
+.counter{
+    font-size:55px;;
+}
+.loadingbarfront{
+    height: 15px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    width: 0%;
+}
+.loadingbarground{
+    height: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+}
