@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: gray;   
+}
+.menuopen{
+    position: fixed;
+    top: 30px;
+    right: 45px;
+    font-size: 40px;
+    color: coral;
+    cursor: pointer;
+}
+.menuclose{
+    cursor: pointer;
+}
+.sidebar{
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     background: white;
+     height: 100%;
+     width: 500px;
+     transform: translate(-100%);
+     transition: 0.3s; /*Süreli açılmasını sağlar. */
+}
+.sidebarheader{
+    text-align: right;
+    padding: 18px;
+}
+.menu a{
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+    padding: 16px 24px;
+    display: block;
+}
+.menu a:hover{
+    background: coral;
+    color: white;
+    padding-left: 40px;
+}
+.showsidebar{
+    transform: translate(0%); 
+}
+
+@media(max-width:768px)
+{
+    .sidebar{
+        width: 100%;
+    }
+
+}
