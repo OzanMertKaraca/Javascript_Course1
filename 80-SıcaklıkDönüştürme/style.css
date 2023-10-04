@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color:darkgreen;
+}
+.container{
+    background: lightgreen;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.temparaturediv{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.temparaturediv input{
+    width: 60%;
+    padding: 5px;
+    border: none;
+    outline: none; /* üzerine tıklanıldığında çıkan border */
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+@media screen and (max-width:600){
+    .tempınput{
+        width: 100%;;
+    } 
+
+    .temparaturediv{
+        flex-direction: column;
+        align-items:flex-start ;
+    }
+}
