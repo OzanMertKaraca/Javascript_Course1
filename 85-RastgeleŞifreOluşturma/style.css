@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.container{
+    background-color:lightcoral ;
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+ .inputcontainer{
+    border: 2px solid lightcoral;
+    
+}
+div input{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: lightcoral ;
+    color: black;
+    font-weight: bolder;
+    font-size: 28px;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.copyicon{
+    height: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.copyicon:hover{
+    opacity: 1;
+}
+.createpassword{
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.createpassword:hover{
+    background-color: brown;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      color: red;
+}
+.alertpasswordcopied{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: chartreuse;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     transition: 0.4s;/* 4sn içinde geri kaybolmasını sağlar. */
+}
+.active{
+    right: -300px;
+}
