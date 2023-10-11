@@ -38,3 +38,9 @@ function copypassword(){
     }
 }
 
+// İlk olarak şifre oluşturmayı yazdım 
+// Butona event ekleyip rastgele şifreyi ilk console sonrada inputda görünecek şekilde yazdım
+// sonrasında kopyalama işleminde olması gereken işlemlerde input değer idolu ise eğer kopyalacak
+// sonrasında active classı kaldırılacak böylelikle kopylama mesajı görünecek 
+// 2 saniye sonrasında da tekrardan kaybolacak şekilde settimeut ile revize ettim
+
