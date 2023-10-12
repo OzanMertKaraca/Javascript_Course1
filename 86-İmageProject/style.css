@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+.imagediv{
+    margin: 15px 25%;  /*İlk Yazılan Yukarıdan Aşağı ikincisi sağdan soldan */
+}
+.imagediv img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.loading  img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
