@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    justify-content: center; /*Yatay*/
+    align-items: center; /*Dikey */
+    display: flex; 
+}
+.container{
+    width: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px , rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+form{
+    display: flex; /*row*/
+}
+.city{
+    width: 75%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 10px;
+    background-color:lightblue;
+    border: none;
+    outline: none;
+}
+.citybutton{
+    width: 25%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 0px 10px 10px 0px;
+    background-color:blue;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: aliceblue;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+}
+.temperature{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+.temperaturedetails{
+    display: flex;
+    flex-wrap: wrap; /*Tarayıcı boyutuna göre ayarlama yapacak */
+    justify-content: center;
+    align-items: center;
+}
+.temperaturedetails div{
+    background-color: lightblue;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin:10px;
+}
+
+@media (max-width:768px) { /* Mobil görünümde geçerli olacak */
+    .temperaturedetails div{
+        width: 100% ;
+    }
+}
