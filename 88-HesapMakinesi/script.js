@@ -12,7 +12,7 @@ let isWaiting = false;
 function sendnumbervalue(number){
     // calculatortitle.textContent = number;
   
-    if(isWaiting)
+    if(isWaiting)//true ise
     {
      
         calculatortitle.textContent = number;
@@ -37,13 +37,13 @@ function adddecimal(){
 function useoperator(operator){
     const currentvalue = Number(calculatortitle.textContent); //Number türüne convert
 
-    if(operatorValue && isWaiting){
+    if(operatorValue && isWaiting){ //Operatervalue var ise ve iswaiting true ise
         operatorValue = operator;
         return;
     }
 
     if(!initialValue){
-        initialValue = currentvalue;
+        initialValue = currentvalue; //Buttondan gelen değer = initialvalue
     }
     else{
         const calculation = calc[operatorValue](initialValue,currentvalue)
