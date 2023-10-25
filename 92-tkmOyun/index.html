@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+</head>
+<body>
+        
+    <div class="gamecontainer">
+        <div class="header">
+            <h1>Taş Kağıt Makas</h1>
+        </div>
+        <h2>Oyuncu 1 <span class="choice" id="playerturn"> </span> - Skor: 
+        <span id="playerscore"> </span> </h2>
+        
+        <div class="playercontainer" id="player">
+            <i class="icon fa-regular fa-hand-back-fist" id="playerrock" title="Taş" 
+             onclick="select('rock')"></i>
+            <i class="icon fa-regular fa-hand" id="playerpaper" title="Kağıt"
+            onclick="select('paper')"></i>
+            <i class="icon fa-regular fa-hand-scissors" id="playerscissors" title="Makas"
+            onclick="select('scissors')"></i>
+        </div>
+
+
+        <h2>Oyuncu 2 <span class="choice" id="computerturn"> </span> - Skor: 
+            <span id="computerscore"> </span> </h2>
+            
+            <div class="playercontainer" id="computer">
+                <i class="icon fa-regular fa-hand-back-fist" id="computerrock" title="Taş"></i>
+                <i class="icon fa-regular fa-hand" id="computerpaper" title="Kağıt"></i>
+                <i class="icon fa-regular fa-hand-scissors" id="computerscissors" title="Makas"></i>
+            </div>
+
+        <div class="resetcontainer">
+            <i class="reseticon fa-solid fa-rotate" title="Sıfırla"></i>
+        </div>
+
+        <div class="resultcontainer">
+            <h3 class="resulttext" id="resulttext"> </h3>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
