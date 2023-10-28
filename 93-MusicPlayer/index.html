@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="maindiv">
+        <div class="imgdiv">
+            <img src="img/c.png" alt="">
+        </div>
+       
+        <div class="titlediv">
+           <h2 class="title" id="title">Müzik Olmazlardan olmalı!</h2> 
+           <h3 class="creater" id="creater">Oluşturan Kullanıcı</h3>
+        </div>
+        <audio src="music/c.mp3"></audio>
+        
+        <div class="progressDiv" id="progressDiv">
+            <div class="progress" id="progress"></div>
+            <div class="timediv">
+                <span id="currenttime">0:00</span>
+                <span id="totaltime">2:41</span>
+            </div>
+        </div>
+        
+        <div class="musiccontroldiv">
+            <i class="icon fa-solid fa-backward" id="prev"></i>
+            <i class="icon fa-solid fa-play" id="play"></i>
+            <i class="icon fa-solid fa-pause" id="pause" hidden></i>
+            <i class="icon fa-solid fa-forward" id="next"></i>
+
+        </div>
+ 
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
