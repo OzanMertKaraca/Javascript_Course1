@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentdiv{
+    background-color: lightskyblue;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.menu{
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+    height: auto;
+    
+  }
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+.mainpopup
+{
+    background: rgba(0, 0 ,0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    display: none; /* block şeklinde olduğunda popup açık oluyor bunu butona tıklanıldığında açılanacak fonks. */
+}
+.popup{
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background: white;
+    position: relative;
+    font-weight: bolder;
+ 
+}
+
+form{
+    width: 90%;
+}
+input , textarea{
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 3px;
+}
+.form-group{
+    margin: 10px 0px;
+
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 15px 0px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.alertmessage{
+    width: 90%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+.title{
+    margin-top: 0px;
+}
+input:valid , textarea:valid{
+    border:2px solid green;
+}
+input:invalid , textarea:invalid{
+    border: 2px dotted red;
+}
+
