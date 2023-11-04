@@ -5,6 +5,7 @@ const form = document.getElementById('form');
 const formcontent = document.getElementById('formcontent');
 const closepopup = document.getElementById('closepopup');
 const delet = document.getElementById('delete');
+const content = document.getElementById('content');
 
 
 menu.addEventListener('click' , () =>{
@@ -13,9 +14,16 @@ menu.addEventListener('click' , () =>{
 
  form.addEventListener('submit' , e =>{
         e.preventDefault();
-         const adform = form.name.value;
+         const adform = form.name.value();
          formcontent.contentname.value = adform;
- });
+         content.innerText=adform;
+        });
+
+        
+
+
+
+
 
 mainpopup.addEventListener('click' , e => { //X tuşu dışında popup kapama işlemi yapmaktayım.
     if(e.target.className ==='mainpopup')

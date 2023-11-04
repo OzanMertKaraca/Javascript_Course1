@@ -1,0 +1,82 @@
+body
+{
+        height: 100vh;
+        margin:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: coral;
+}
+
+
+.container
+{
+   
+    max-width: 400px;
+}
+.menu{
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+    height: auto;
+    
+  }
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.todos li {
+    background-color: rgb(243, 70, 8);
+}
+
+.delete
+{
+    cursor:pointer
+}
+.mainpopup{
+    background: rgba(0, 0 ,0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height: 100%;
+    display: none;
+}
+.closebutton{
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
+   
+}
+.popup{
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background: white;
+    position: relative;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+input{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 15px 0px;
+    border: none;
+    outline: none;
+}
+input:hover{
+    border: 2px solid red;
+}
