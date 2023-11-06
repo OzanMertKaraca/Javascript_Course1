@@ -81,3 +81,6 @@ input{
 input:hover{
     border: 2px solid red;
 }
+.edit-input{
+    display: none;
+}

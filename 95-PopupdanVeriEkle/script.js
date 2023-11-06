@@ -22,16 +22,10 @@ const listadd = (incomingvalue) => { //todo =>
 
     const html = `<li class="list-group-item d-flex justify-content-between align-items-center">
     <input type="text" class="edit-input">
-    <span class="task-text">${incomingvalue}</span>
+    <span class="enteredvalue">${incomingvalue}</span>
     <i class="far fa-trash-alt delete"></i>
     <button class="edit-button">Düzenle</button>`;
-    // `
-    //     // <li class="list-group-item d-flex justify-content-between align-items-center">
-    //     //         <input type="text"><span>${incomingvalue}</span>
-    //     //         <i class="far fa-trash-alt delete"></i>
-    //     //         <button class="edit-button">Düzenle</button>
-    //     //  </li>
-    // `;
+
     todos.innerHTML+=html;
 };
 
@@ -55,24 +49,32 @@ todos.addEventListener('click', (e) => {
     }
 }); 
 
+//  editButton.addEventListener('click' , ()=>{
+//      editInput.style.display ='block';
+//  })
+
 function goreviGuncelle(e) {
     const li = e.target.parentElement;
-    const taskText = li.querySelector('.task-text');
+    const enteredvalue = li.querySelector('.enteredvalue');
     const editInput = li.querySelector('.edit-input');
     const editButton = li.querySelector('.edit-button');
     const isEditing = li.classList.contains('editing');
 
     if (isEditing) {
-
-        taskText.textContent = editInput.value;
+        enteredvalue.textContent = editInput.value;
         li.classList.remove('editing');
-    } else {
-        // Düzenleme işlemine başla
-        editInput.value = taskText.textContent;
+        editButton.textContent='Düzenle';
+        editInput.style.display ='none';
+    } 
+    else {
+        editInput.style.display ='block';
+        editInput.value = enteredvalue.textContent;
         li.classList.add('editing');
         editButton.textContent='Düzenlemeyi Kaydet';
+        
     }
 }
 
 
 
+//Kayıt Uygulaması Finish
