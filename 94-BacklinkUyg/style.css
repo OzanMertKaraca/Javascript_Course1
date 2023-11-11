@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+} 
+h1{
+    text-align: center;
+    background-color: black;
+    color:aliceblue;
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.modalcontainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+.showmodalclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.8);
+    width: 500px;
+    animation: modalopen 1s;
+}
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.modalheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:blueviolet;
+    color: aliceblue;
+    padding:10px;
+}
+.close-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.modalcontent{
+  padding: 20px;
+}
+.formgroup{
+    height: 50px;
+}
+.formgroup label{
+    color: blueviolet;
+}
+.formgroup input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    background-color:blueviolet;
+    color: aliceblue;
+    padding: 10px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
