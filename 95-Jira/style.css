@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: white;
+}
+h1{
+    color:black;
+}
+ul{
+   padding: 0;
+   list-style-type: none;
+   margin: 0;
+  
+}
+.app-title{
+    text-align: center;
+}
+.dragcontainer{
+    margin: 20px;
+}
+.draglist{
+    display: flex;
+}
+.dragcolumn{
+    flex: 1;
+    margin: 0 10px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.dragitem{
+    background-color: black;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    line-height: 24px;
+}
+.todocolumn .header, 
+.todocolumn .update{
+    background-color: red;
+}
+.Inprogresscolumn .header,
+.Inprogresscolumn .update{
+    background-color: aqua;
+}
+.donecolumn .header,
+.donecolumn .update{
+    background-color: lightgreen;
+}
+.header{
+    margin: 10px;  
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;  
+}
+header h1{
+    font-size: 1.25rem;
+}
+.addbtngroup{
+    display: flex;
+    justify-content: space-between;
+}
+.addbtn{
+    background-color: coral;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addbtn:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.plusspan{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.update{
+    display: none;
+}
+.addcontainer{
+    min-height:100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: none;
+}
+.additem{
+    color: black;
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    margin: 5px auto;
+    padding:8px;
+    
+}
+.additem:focus{
+    outline: none;
+}
