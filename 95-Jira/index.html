@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jira</title>
-    <link rel="shortcut icon" href="#">
+    <!-- <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <h1 class="app-title">Jira</h1>
     <div class="dragcontainer">
         <ul class="draglist">
-        <!-- Todo ile ilgili alan -->
+         Todo ile ilgili alan 
             <li class="dragcolumn todocolumn">
                 <span class="header">
                     <h1>Todo</h1>
@@ -40,7 +40,7 @@
                  </div>
             </li>
 
-        <!-- Inprogress ile ilgili alan -->
+        Inprogress ile ilgili alan 
             <li class="dragcolumn Inprogresscolumn">
                 <span class="header">
                     <h1>Inprogress</h1>
@@ -68,7 +68,7 @@
                  </div>
             </li>
 
-        <!-- Done ile ilgili alan -->
+         Done ile ilgili alan 
             <li class="dragcolumn donecolumn">
                 <span class="header">
                     <h1>Done</h1>
@@ -97,6 +97,105 @@
             </li>
 
 
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script> -->
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="app-title">Jira Uygulaması</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+
+            <!-- Todo İle İlgili  -->
+            <li class="drag-column todo-column">
+                <span class="header">
+                    <h1>Todo</h1>
+                </span>
+
+                <div id="todo-content">
+                    <ul class="drag-item-list" id="todo-list">
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+
+                    </ul>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true"></div>
+                </div>
+
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-span">+</span>
+                    </div>
+                    <div class="add-btn update">
+                        <span>Kaydet</span>
+                    </div>
+
+                </div>
+            </li>
+
+            <!-- InProgress İle İlgili  -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>In Progress</h1>
+                </span>
+
+                <div id="progress-content">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+                    </ul>
+                </div>
+                <div class="add-container">
+                    <div class="add-item"></div>
+                </div>
+
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-span">+</span>
+                    </div>
+                    <div class="add-btn update">
+                        <span>Kaydet</span>
+                    </div>
+
+                </div>
+            </li>
+            <!-- Done İle İlgili  -->
+            <li class="drag-column done-column">
+                <span class="header">
+                    <h1>Done</h1>
+                </span>
+
+                <div id="done-content">
+                    <ul class="drag-item-list" id="done-list">
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Test</li>
+                    </ul>
+                </div>
+                <div class="add-container">
+                    <div class="add-item"></div>
+                </div>
+
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-span">+</span>
+                    </div>
+                    <div class="add-btn update">
+                        <span>Kaydet</span>
+                    </div>
+
+                </div>
+            </li>
         </ul>
 
     </div>
