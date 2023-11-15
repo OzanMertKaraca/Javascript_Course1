@@ -61,6 +61,8 @@
 
 // updateDOM();
 
+const listcolumns = document.querySelectorAll('.drag-item-list');
+
 const todoList = document.getElementById('todo-list');
 const progressList = document.getElementById('progress-list');
 const doneList = document.getElementById('done-list');
@@ -69,6 +71,9 @@ let todoListArray = [];
 let progressListArray = [];
 let doneListArray = [];
 let listArrays = [];
+
+let dragItem;
+let currentcolumn;
 
 let updatedOnLoad = false;
 
@@ -84,6 +89,26 @@ function getSavedColumns() {
   }
 }
 
+function dragEnter(column){
+  currentcolumn = column;
+}
+
+function drag(e){
+    dragItem = e.target;
+    console.log(dragItem);
+}
+
+function allowDrop(e){
+    e.preventDefault();
+}
+
+function drop(e){
+  e.preventDefault();
+  const parent = listcolumns[currentcolumn];
+
+  parent.appendChild(dragItem);
+}
+
 function updateSavedColumns() {
   listArrays = [todoListArray, progressListArray, doneListArray];
   const arrayNames = ['todo', 'progress', 'done'];
@@ -96,14 +121,16 @@ function updateSavedColumns() {
 }
 
 function createItem(columnItem, column, item, index) {
-  console.log('columnItem', columnItem);
-  console.log('column', column);
-  console.log('item', item);
-  console.log('index', index);
+  // console.log('columnItem', columnItem);
+  // console.log('column', column);
+  // console.log('item', item);
+  // console.log('index', index);
 
   const listItem = document.createElement('li');
   listItem.classList.add('drag-item');
   listItem.textContent = item;
+  listItem.draggable = true;
+  listItem.setAttribute('ondragstart' , 'drag(event)');
   columnItem.appendChild(listItem);
 }
 
