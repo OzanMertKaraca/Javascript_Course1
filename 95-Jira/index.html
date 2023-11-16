@@ -4,104 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jira</title>
-    <!-- <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h1 class="app-title">Jira</h1>
-    <div class="dragcontainer">
-        <ul class="draglist">
-         Todo ile ilgili alan 
-            <li class="dragcolumn todocolumn">
-                <span class="header">
-                    <h1>Todo</h1>
-                </span>
-                <div id="todocontent">
-                    <ul class="dragitemlist" id="todolist">
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                    </ul>
-                </div>
-                <div class="addcontainer">
-                    <div class="additem" contenteditable="true"></div>
-                 </div>
-
-                 <div class="addbtngroup">
-                    <div class="addbtn">
-                        <span class="plusspan">+</span>
-                    </div>
-                <div class="addbtn update">
-                    <span>Kaydet</span>
-
-                </div>
-                 </div>
-            </li>
-
-        Inprogress ile ilgili alan 
-            <li class="dragcolumn Inprogresscolumn">
-                <span class="header">
-                    <h1>Inprogress</h1>
-                </span>
-                <div id="Inprogresscontent">
-                    <ul class="dragitemlist" id="progresslist">
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                    </ul>
-                </div>
-                <div class="addcontainer">
-                    <div class="additem"></div>
-                 </div>
-
-                 <div class="addbtngroup">
-                    <div class="addbtn">
-                        <span class="plusspan">+</span>
-                    </div>
-                <div class="addbtn update">
-                    <span>Kaydet</span>
-
-                </div>
-                 </div>
-            </li>
-
-         Done ile ilgili alan 
-            <li class="dragcolumn donecolumn">
-                <span class="header">
-                    <h1>Done</h1>
-                </span>
-                <div id="donecontent">
-                    <ul class="dragitemlist" id="donelist">
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                        <li class="dragitem">TEST</li>
-                    </ul>
-                </div>
-                <div class="addcontainer">
-                    <div class="additem"></div>
-                 </div>
-
-                 <div class="addbtngroup">
-                    <div class="addbtn">
-                        <span class="plusspan">+</span>
-                    </div>
-                <div class="addbtn update">
-                    <span>Kaydet</span>
-
-                </div>
-                 </div>
-            </li>
-
-
-        </ul>
-
-    </div>
-
-    <script src="script.js"></script> -->
+  
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -119,11 +22,8 @@
                 </span>
 
                 <div id="todo-content">
-                    <ul class="drag-item-list" id="todo-list" ondragover="allowDrop(event)"
-                    ondragenter="dragEnter(0)" ondrop="drop(event)">
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
-
+                    <ul class="drag-item-list" id="todo-list" ondragover="allowDrop(event)" ondragenter="dragEnter(0)"
+                        ondrop="drop(event)">
                     </ul>
                 </div>
                 <div class="add-container">
@@ -131,10 +31,10 @@
                 </div>
 
                 <div class="add-btn-group">
-                    <div class="add-btn">
+                    <div class="add-btn" onclick="showitemdiv(0)">
                         <span class="plus-span">+</span>
                     </div>
-                    <div class="add-btn update">
+                    <div class="add-btn update" onclick="hideitemdiv(0)">
                         <span>Kaydet</span>
                     </div>
 
@@ -149,22 +49,19 @@
 
                 <div id="progress-content">
                     <ul class="drag-item-list" id="progress-list" ondragover="allowDrop(event)"
-                    ondragenter="dragEnter(1)" ondrop="drop(event)">
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
+                        ondragenter="dragEnter(1)" ondrop="drop(event)">
+                  
                     </ul>
                 </div>
                 <div class="add-container">
-                    <div class="add-item"></div>
+                    <div class="add-item" contenteditable="true"></div>
                 </div>
 
                 <div class="add-btn-group">
-                    <div class="add-btn">
+                    <div class="add-btn" onclick="showitemdiv(1)">
                         <span class="plus-span">+</span>
                     </div>
-                    <div class="add-btn update">
+                    <div class="add-btn update"  onclick="hideitemdiv(1)">
                         <span>Kaydet</span>
                     </div>
 
@@ -177,23 +74,20 @@
                 </span>
 
                 <div id="done-content">
-                    <ul class="drag-item-list" id="done-list" ondragover="allowDrop(event)"
-                    ondragenter="dragEnter(2)" ondrop="drop(event)">
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
-                        <li class="drag-item">Test</li>
+                    <ul class="drag-item-list" id="done-list" ondragover="allowDrop(event)" ondragenter="dragEnter(2)"
+                        ondrop="drop(event)">
+                 
                     </ul>
                 </div>
                 <div class="add-container">
-                    <div class="add-item"></div>
+                    <div class="add-item" contenteditable="true"></div>
                 </div>
 
                 <div class="add-btn-group">
-                    <div class="add-btn">
+                    <div class="add-btn" onclick="showitemdiv(2)">
                         <span class="plus-span">+</span>
                     </div>
-                    <div class="add-btn update">
+                    <div class="add-btn update" onclick="hideitemdiv(2)">
                         <span>Kaydet</span>
                     </div>
 
